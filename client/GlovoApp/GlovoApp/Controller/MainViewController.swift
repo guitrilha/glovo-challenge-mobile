@@ -54,7 +54,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     
     private func configMapObservers(){
         currentUserPositionEvent.observeNext { cordinate in
-            self.mainView.animateCameraTo(cordinate: cordinate)
+            self.mainView.animateCameraTo(cordinate: cordinate, zoom: 10)
         }.dispose(in: disposeBag)
         
         centerMapPositionEvent.observeNext { cordinate in
@@ -87,11 +87,17 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
         case .denied:
             self.onLocationDenied()
         default:
-            self.onLocationAuthorized()
+           return
         }
     }
     
-    private func onLocationAuthorized(){
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        onLocationUpdated()
+        self.locationManager.delegate = nil
+    }
+
+    private func onLocationUpdated(){
+        
         updateCurrentLocation()
         isUserInWorkigArea()
     }

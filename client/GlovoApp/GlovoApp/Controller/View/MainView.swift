@@ -88,7 +88,6 @@ class MainView: UIView {
         viewMap.snp.makeConstraints{ (make) in
             make.edges.equalTo(viewMapContainer)
         }
-        viewMap.settings.myLocationButton = true
         viewMap.delegate = mapDelegate
     }
     
@@ -311,8 +310,8 @@ class MainView: UIView {
         viewMap.animate(with: GMSCameraUpdate.fit(bounds))
     }
     
-    func animateCameraTo(cordinate: CLLocationCoordinate2D ){
+    func animateCameraTo(cordinate: CLLocationCoordinate2D, zoom: Float ){
         viewMap.animate(toLocation: cordinate)
+        viewMap.animate(toZoom: zoom)
     }
-    
 }
