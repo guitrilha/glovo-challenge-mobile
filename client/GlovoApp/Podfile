@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GlovoApp' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GlovoApp
+    pod 'SnapKit', '~> 4.0.0'
+    pod 'ReactiveKit'
+    pod 'Bond'
+    pod 'GoogleMaps'
+    pod 'GooglePlaces'
+    pod 'AlamofireReactive', '~> 2.0'
+
+  target 'GlovoAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'GlovoAppUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

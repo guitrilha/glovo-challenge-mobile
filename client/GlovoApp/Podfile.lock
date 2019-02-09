@@ -1,0 +1,51 @@
+PODS:
+  - Alamofire (4.2.0)
+  - AlamofireReactive (2.0.0):
+    - Alamofire (= 4.2)
+    - ReactiveKit (~> 3.1)
+  - Bond (7.0.0):
+    - Differ (~> 1.3)
+    - ReactiveKit (~> 3.9)
+  - Differ (1.3.0)
+  - GoogleMaps (3.0.2):
+    - GoogleMaps/Maps (= 3.0.2)
+  - GoogleMaps/Base (3.0.2)
+  - GoogleMaps/Maps (3.0.2):
+    - GoogleMaps/Base
+  - GooglePlaces (3.0.2):
+    - GoogleMaps/Base (= 3.0.2)
+  - ReactiveKit (3.9.7)
+  - SnapKit (4.0.1)
+
+DEPENDENCIES:
+  - AlamofireReactive (~> 2.0)
+  - Bond
+  - GoogleMaps
+  - GooglePlaces
+  - ReactiveKit
+  - SnapKit (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireReactive
+    - Bond
+    - Differ
+    - GoogleMaps
+    - GooglePlaces
+    - ReactiveKit
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  AlamofireReactive: 1342e3ae546d02af21d370eadd7c34b7308cc473
+  Bond: 7928751991aee53c1b746e82735a7214db2cb09f
+  Differ: 9fcee7602542d7c6484ce05a0faec1c11258ed63
+  GoogleMaps: 941cd655e009b4d8e42df19a3d749bc3fccec973
+  GooglePlaces: c086e0055dc5f0177d7c9d65fc77a1734f9a4825
+  ReactiveKit: 5f4c440715d671901c382ae6b42ed3337ce4699b
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+
+PODFILE CHECKSUM: 92184ab6b85e2dbcc85a9136833e02fe3d462a75
+
+COCOAPODS: 1.5.3

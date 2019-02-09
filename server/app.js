@@ -47,4 +47,6 @@ app.get('/api/cities/:city_code', function(req, res) {
   })
 })
 
-app.listen(3000)
+app.listen(3000, "0.0.0.0");
+
+
